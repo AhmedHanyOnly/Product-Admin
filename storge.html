@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Faile Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Start Top Nav Bar -->
+    <nav class="top-nav">
+      <div class="container">
+        <a href="#" class="tog-show" data-show=".top-nav .list-item"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+        <ul class="list-item">
+          <li><a href="./site-settings.html">الأعدادات</a></li>
+          <li><a href="./storge.html">المخزن </a></li>
+          <li><a href="./student-info.html">التقارير</a></li>
+        </ul>
+        <div class="dropdown-hover" data-show="dropdown-lang">
+          <div class="icon-drop">
+            <i class="fa-solid fa-user icon"></i>
+          </div>
+          <p class="text">admin</p>
+          <div class="arrow-icon">
+            <i class="fa-solid fa-angle-down"></i>
+          </div>
+          <ul class="listis-item" id="dropdown-lang">
+            <li class="item-drop">
+              <a href="./login.html">
+                <p class="text">تسجيل الخروج</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Top Nav Bar -->
+    <!-- Start Bottom Nav Bar -->
+    <nav class="bottom-nav">
+      <div class="container">
+        <a href="#" class="tog-show" data-show=".bottom-nav .list-item"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+
+        <ul class="list-item">
+          <li>
+            <a class="item" href="./index.html">
+              الرئيسية
+              <i class="i-item fa-solid fa-house"></i>
+            </a>
+          </li>
+          <li>
+            <div class="dropdown-hover item">
+              <div>
+                إضافة إدارة
+                <i class="i-item fa-solid fa-bars-progress"></i>
+              </div>
+              <div class="arrow-icon">
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <ul class="listis-item" id="dropdown-lang">
+                <li class="item-drop">
+                  <a href="#">
+                    <p class="text">+</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a class="item" href="./users.html">
+              النسخ الاحتياطي
+              <i class="i-item fa-solid fa-users"></i>
+            </a>
+          </li>
+
+          <!-- <li>
+                  <a class="item" href="./notice.html">
+                      الأشعارات
+                      <i class="i-item fa-solid fa-bell"></i>
+                      <div class="badge-count">5</div>
+                  </a>
+              </li> -->
+        </ul>
+      </div>
+    </nav>
+    <!-- End Bottom Nav Bar -->
+  <!-- Start Section -->
+  <section class="main-section users">
+    <div class="container">
+      <h4 class="main-heading">المخزن</h4>
+      <div class="d-flex align-items-center flex-wrap gap-2 justify-content-between mb-2">
+        <div class="d-flex align-items-center gap-2">
+          <input type="text" class="form-control" placeholder="أبحث عن بضاعة" name="" id="" />
+          <select class="main-select " name="" id="">
+            <option value="">كل العملاء</option>
+            <option value=""> مفعل</option>
+            <option value="">غير مفعل </option>
+          </select>
+        </div>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#modal-add" class="btn-main-sm">
+          أضف بضاعة
+          <i class="icon fa-solid fa-plus"></i>
+        </button>
+        <!-- Modal -->
+        <div class="modal fade" id="modal-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">أضف بضاعة جديد </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="row row-gap-24">
+                  <div class=" col-sm-4">
+                    <label class="small-label" for="">المعدات </label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class=" col-sm-4">
+                    <label class="small-label" for="">الجهة الصادرة </label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                  <div class=" col-sm-4">
+                    <label class="small-label" for="">الكمية الصادرة </label>
+                    <input class="form-control" type="text" placeholder="">
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn-main-sm ">حفظ</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table main-table">
+          <thead>
+            <tr>
+              <th>المعدات </th>
+              <th>الكمية الصادرة</th>
+              <th>الجهة الصادرة</th>
+              <th class="text-center">التحكم</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>باسم</td>
+              <td>1234567</td>
+              <td>الرياض</td>
+              <td >
+                <div class="d-flex flex-wrap align-items-center justify-content-center gap-1">
+                  <div class="btn btn-sm btn-warning">
+                    <i class="fa-solid fa-print"></i>
+                  </div>
+                  <div class="btn btn-sm btn-primary">
+                    <i class="fa-solid fa-pen-to-square"></i>
+                  </div>
+                  <div class="btn btn-sm btn-danger">
+                    <i class="fa-solid fa-trash-can"></i>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- End Section -->
+  <!-- Start Footer -->
+  <div class="footer-bottom py-3">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <p>جميع الحقوق محفوظة © لـ 2022</p>
+        <img src="./img/footer/copy.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- ENd Footer -->
+  <!-- Js Files -->
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>
