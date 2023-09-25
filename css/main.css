@@ -616,12 +616,12 @@ button {
   font-size: 25px;
 }
 .boxes-info .box-info .text {
-  font-size: 16px;
+  font-size: 18px;
   color: #6b7280;
 }
 .boxes-info .box-info .bg-icon {
   position: absolute;
-  right: -3%;
+  right: 3%;
   bottom: 0;
   font-size: 60px;
 }
@@ -715,7 +715,8 @@ button {
 .card-side .card-slide .btn-icon .icon {
   border: none !important;
 }
-.card-side .card-slide .btn-icon .icon svg, .card-side .card-slide .btn-icon .icon i {
+.card-side .card-slide .btn-icon .icon svg,
+.card-side .card-slide .btn-icon .icon i {
   width: 20px;
 }
 
