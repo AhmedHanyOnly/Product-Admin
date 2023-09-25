@@ -1,5 +1,5 @@
 .text-main-color {
-  color: #01B3E4;
+  color: #c29144;
 }
 
 .py-60 {
@@ -65,12 +65,12 @@ button {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #01B3E4;
+  background-color: #c29144;
   border-radius: 8px;
 }
 
 .top-nav {
-  background-color: #01B3E4;
+  background-color: #c29144;
   color: white;
   font-size: 13px;
   z-index: 1000;
@@ -129,7 +129,7 @@ button {
     display: none;
   }
   .top-nav .container .list-item li a:hover {
-    color: #01B3E4;
+    color: #c29144;
   }
 }
 .top-nav .container .list-item li a {
@@ -146,7 +146,7 @@ button {
   transition: 300ms;
   position: absolute;
   height: 3px;
-  background-color: #01B3E4;
+  background-color: #c29144;
 }
 .top-nav .container .list-item li a:hover::before {
   left: 0;
@@ -154,7 +154,7 @@ button {
 
 .bottom-nav {
   box-shadow: 0 5px 10px 0 rgba(228, 228, 228, 0.5215686275);
-  border-bottom: 3px solid #01B3E4;
+  border-bottom: 3px solid #c29144;
   background-color: white;
   z-index: 1000;
 }
@@ -207,10 +207,10 @@ button {
   margin-right: 2px;
 }
 .bottom-nav .container .list-item li .item:hover {
-  color: #01B3E4;
+  color: #c29144;
 }
 .bottom-nav .container .list-item li .item:hover i, .bottom-nav .container .list-item li .item:hover svg {
-  color: #01B3E4;
+  color: #c29144;
 }
 .bottom-nav .container .list-item li .dropdown-hover {
   display: flex;
@@ -314,7 +314,7 @@ button {
   object-fit: cover;
 }
 .artical-section .box-text h1 {
-  color: #01B3E4;
+  color: #c29144;
   font-weight: 600;
   font-size: 24px;
   margin-bottom: 13px;
@@ -443,7 +443,7 @@ button {
   padding: 0.3rem 0.7rem;
   transition: 300ms;
   color: #fff;
-  background: #01B3E4;
+  background: #c29144;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -454,7 +454,7 @@ button {
   border: none;
   font-size: 13px;
   outline: none;
-  border: 1px solid #01B3E4;
+  border: 1px solid #c29144;
   z-index: 1;
   position: relative;
   overflow: hidden;
@@ -471,8 +471,8 @@ button {
   z-index: -1;
 }
 .btn-main-sm:hover {
-  color: #01B3E4;
-  border: 1px solid #01B3E4;
+  color: #c29144;
+  border: 1px solid #c29144;
 }
 .btn-main-sm:hover::before {
   left: 0;
@@ -604,7 +604,7 @@ button {
   color: #5b8af0;
 }
 .boxes-info .box-info.green .bg-icon {
-  color: #01B3E4;
+  color: #64d2ed;
 }
 .boxes-info .box-info.pur .bg-icon {
   color: #7b74eb;
@@ -638,7 +638,7 @@ button {
   background-color: #5b8af0;
 }
 .boxes-info.boxes-bg-color .box-info.green {
-  background-color: #01B3E4;
+  background-color: #c29144;
 }
 .boxes-info.boxes-bg-color .box-info.pur {
   background-color: #7b74eb;
