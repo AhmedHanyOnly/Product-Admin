@@ -1,0 +1,24 @@
+// Use Var
+@import "./sass/helpers/var";
+// Use Mixins
+@import "./sass/helpers/mixins";
+// Use formats
+@import "./sass/components/helpers-classes";
+// Use Global Page
+@import "./sass/pages/globalPage";
+// Use Header
+@import "./sass/layout/header";
+// Use Page
+@import "./sass/pages/auth";
+// Use Page
+@import "./sass/pages/main";
+// Use Buttns and dropdowns
+@import "./sass/components/dropdowns-and-buttons";
+// Use headings
+@import "./sass/components/headings";
+// Use headings
+@import "./sass/components/boxes";
+// Use slides
+@import "./sass/components/forms";
+// Use Footer
+@import "./sass/layout/footer";

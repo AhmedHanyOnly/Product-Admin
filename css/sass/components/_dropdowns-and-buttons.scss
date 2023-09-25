@@ -1,0 +1,134 @@
+//buttons
+.btn-main-sm {
+    padding: 0.3rem 0.7rem;
+    transition: $transition;
+    color: #fff;
+    background: $main-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    white-space: nowrap;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    font-size: 13px;
+    outline: none;
+    border: 1px solid $main-color;
+    z-index: 1;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: "";
+        position: absolute;
+        left: 100%;
+        top: 0;
+        width: 100%;
+        transition: $transition;
+        height: 100%;
+        background-color: white;
+        z-index: -1;
+    }
+    &:hover {
+        color: $main-color;
+        border: 1px solid $main-color;
+        &::before {
+            left: 0;
+        }
+    }
+
+}
+
+
+//dropdowns 
+.dropdown-hover {
+    position: relative;
+    color: white;
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 4px;
+    z-index: 1001;
+    cursor: pointer;
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 7px;
+        left: 0;
+        top: 100%;
+    }
+    &:hover {
+        .listis-item {
+            display: block;
+        }
+    }
+    .icon-drop {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: $grey-color;
+        .icon {
+            font-size: 16px;
+        }
+    }
+    .text {
+        margin: 0;
+        font-size: 13px;
+        text-align: center;
+    }
+    .listis-item {
+        position: absolute;
+        left: 0;
+        z-index: 1000;
+        top: calc(100% + 7px);
+        width: fit-content;
+        padding: 0;
+        min-width: 100%;
+        background-color:$bg-dark;
+        overflow-y: auto;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+        & {
+            -ms-overflow-style: none; /* IE and Edge */
+            scrollbar-width: none; /* Firefox */
+        }
+        display: none;
+
+        .item-drop a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-content: center;
+            padding: 10px;
+            width: 100%;
+            white-space: nowrap;
+            &:hover {
+                background: $bg-dark-light;
+            }
+            .icon-drop {
+                width: 19px;
+            }
+            .text {
+                size: 19px;
+                color: white;
+            }
+        }
+    }
+}
+
+// Badges
+.badge-count {
+    background-color: orangered;
+    font-size: 12px;
+    height: 17px;
+    width: 17px;
+    border-radius: 5px;
+    color: white;
+    @include centering ;
+}

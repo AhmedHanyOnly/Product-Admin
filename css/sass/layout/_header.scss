@@ -1,0 +1,138 @@
+// Top Nav Bar
+.top-nav {
+    background-color:$main-color;
+    color: white;
+    font-size: 13px;
+    z-index: 1000;
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        .tog-show {
+            margin: 10px 0;
+            display: none;
+            cursor: pointer;
+            @include maxWidth(sm){
+                display: block;
+            }
+            i,svg {
+                font-size: 23px
+            }
+        }
+        ul {
+            @include ul-reset;
+        }
+        a {
+            color: white;
+        }
+        .list-item {
+            display: flex;
+            z-index: 1000;
+            align-items: center;
+            @include maxWidth(sm){
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                min-width: 200px;
+                display: none;
+                right: 0;
+                background-color:$bg-dark;
+                li {
+                    width: 100%;
+                    a {
+                        border-bottom: 1px solid $grey-color;
+                        width: 100%;
+                        transition: $transition;
+                        &::before {
+                            display: none;
+                        }
+                        &:hover {
+                            color: $main-color;
+                        }
+                    }
+                }
+            }
+            li a {
+                padding: 0.7rem ;
+                display: block;
+                overflow: hidden;
+                position: relative;
+                &::before {
+                    content: "";
+                    width: 100%;
+                    left: 100%;
+                    bottom: 3px;
+                    transition: $transition;
+                    position: absolute;
+                    height: 3px;
+                    background-color: $main-color;
+                }
+                &:hover::before {
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+// Bottom Nav Bar
+.bottom-nav {
+    box-shadow: 0 5px 10px 0 $color-box-shadow;
+    border-bottom: 3px solid $main-color;
+    background-color: white;
+    z-index: 1000;
+    .container {
+        
+        .tog-show {
+            display: none;
+            cursor: pointer;
+            @include maxWidth(sm){
+                display: inline-block;
+                margin: 10px 0;
+            }
+            i,svg {
+                font-size: 23px;
+                color: black;
+            }
+        }
+        .list-item {
+            display: flex;
+            z-index: 1000;
+            align-items: center;
+            @include ul-reset;
+            @include maxWidth(sm){
+                flex-direction: column;
+                display: none;
+            }
+            li .item {
+                padding:1rem 0.7rem;
+                display: block;
+                transition: $transition;
+                color:black;
+                font-size: 13px;
+                white-space: nowrap;
+                position: relative;
+                .badge-count {
+                    position: absolute;
+                    left: 0px;
+                    top: 13%
+                }
+                .i-item {
+                    transition: $transition;
+                    color: $greey-blue;
+                    font-size: 16px;
+                    margin-right: 2px;
+                }
+                &:hover{
+                    color: $main-color;
+                    i,svg {
+                        color: $main-color;
+                    }
+                }
+            } 
+            li .dropdown-hover {
+                display: flex;
+            } 
+        }
+    }
+}

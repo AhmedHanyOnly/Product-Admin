@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Faile Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Start Top Nav Bar -->
+  <nav class="top-nav">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+      <ul class="list-item">
+        <li><a href="./site-settings.html">الأعدادات</a></li>
+        <li><a href="#">الموظفين</a></li>
+        <li><a href="#">الصلاحيات</a></li>
+        <li><a href="#">المدن</a></li>
+        <li><a href="#">التقارير</a></li>
+      </ul>
+      <div class="dropdown-hover" data-show="dropdown-lang">
+        <div class="icon-drop">
+          <i class="fa-solid fa-user icon"></i>
+        </div>
+        <p class="text">admin</p>
+        <div class="arrow-icon">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <ul class="listis-item" id="dropdown-lang">
+          <li class="item-drop">
+            <a href="#">
+              <p class="text">الدعم الفني</p>
+            </a>
+          </li>
+          <li class="item-drop">
+            <a href="#">
+              <p class="text">تسجيل الخروج</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End Top Nav Bar -->
+  <!-- Start Bottom Nav Bar -->
+  <nav class="bottom-nav">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
+
+      <ul class="list-item">
+        <li>
+          <a class="item" href="./index.html">
+            الرئيسية
+            <i class="i-item fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./users.html">
+            العملاء
+            <i class="i-item fa-solid fa-users"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./contracts.html">
+            العقود
+            <i class="i-item fa-solid fa-sheet-plastic"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="">
+            الفواتير
+            <i class="i-item fa-solid fa-money-check-dollar"></i>
+          </a>
+        </li>
+        <li>
+          <div class="dropdown-hover item">
+            <div>
+              السندات
+              <i class="i-item fa-solid fa-bars-progress"></i>
+            </div>
+            <div class="arrow-icon">
+              <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <ul class="listis-item" id="dropdown-lang">
+              <li class="item-drop">
+                <a href="#">
+                  <p class="text">سند صرف</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="#">
+                  <p class="text">سند قبض</p>
+                </a>
+              </li>
+              <li class="item-drop">
+                <a href="#">
+                  <p class="text">تقارير السندات</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a class="item" href="./notice.html">
+            الأشعارات
+            <i class="i-item fa-solid fa-bell"></i>
+            <div class="badge-count">5</div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- End Bottom Nav Bar -->
+  <!-- Start Section -->
+  <section class="main-section py-5">
+    <div class="container">
+
+                <div class="card card-register h-100">
+                    <form action="" method="POST">
+
+                        <div class="card-body shadow">
+                            <div class="row gutters g-2">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <h6 class="mb-2 text-primary">تسجيل حساب</h6>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label  class="mb-2 small-label">الاسم </label>
+                                        <input type="text"
+                                            class="form-control" >
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label  class="mb-2 small-label">الجوال </label>
+                                        <input type="text"
+                                            class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="eMail" class="mb-2 small-label">البريد الاليكتروني</label>
+                                        <input type="email" name="email"
+                                            class="form-control" id="eMail">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="password" class="small-label mb-2">كلمة المرور</label>
+                                        <input type="password" name="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="city">المدينه</label>
+                                        <select name="city_id" id="city" class="form-select">
+                                            <option value="">-- اختر المدينه--</option>
+                                                <option value="">الرياض</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="text-right">
+                                            <label for="">
+                                                <input type="checkbox" name=""  id="">
+                                                الموافقة علي الشروط
+                                            </label>
+                                        </div>
+                                    </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="text-center">
+                                            <button type="submit" id="submit"
+                                                class="btn btn-sm btn-primary">تسجيل</button>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </form>
+        </div>
+    </div>
+</section>
+  <!-- End Section -->
+  <!-- Start Footer -->
+  <div class="footer-bottom py-3">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <p>جميع الحقوق محفوظة © لـ 2022</p>
+        <img src="./img/footer/copy.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <!-- ENd Footer -->
+  <!-- Js Files -->
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>
