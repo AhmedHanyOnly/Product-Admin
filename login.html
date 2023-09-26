@@ -22,47 +22,12 @@
 </head>
 
 <body>
-  <!-- Start Top Nav Bar -->
   <nav class="top-nav">
     <div class="container">
-      <a href="#" class="tog-show" data-show=".top-nav .list-item"><i class="fa-solid fa-bars"></i></a>
-      <ul class="list-item">
-        <li><a href="./site-settings.html">الأعدادات</a></li>
-        <li><a href="#">الموظفين</a></li>
-        <li><a href="#">الصلاحيات</a></li>
-        <li><a href="#">المدن</a></li>
-        <li><a href="#">التقارير</a></li>
-      </ul>
-      <div class="dropdown-hover" data-show="dropdown-lang">
-        <div class="icon-drop">
-          <i class="fa-solid fa-user icon"></i>
-        </div>
-        <p class="text">admin</p>
-        <div class="arrow-icon">
-          <i class="fa-solid fa-angle-down"></i>
-        </div>
-        <ul class="listis-item" id="dropdown-lang">
-          <li class="item-drop">
-            <a href="#">
-              <p class="text">الدعم الفني</p>
-            </a>
-          </li>
-          <li class="item-drop">
-            <a href="#">
-              <p class="text">تسجيل الخروج</p>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- End Top Nav Bar -->
-  <!-- Start Bottom Nav Bar -->
-  <nav class="bottom-nav">
-    <div class="container">
-      <a href="#" class="tog-show" data-show=".bottom-nav .list-item"><i class="fa-solid fa-bars"></i></a>
-
-      <ul class="list-item">
+      <a href="#" class="tog-show" data-show=".top-nav .list-item"
+        ><i class="fa-solid fa-bars"></i
+      ></a>
+      <ul class="list-item ">
         <li>
           <a class="item" href="./index.html">
             الرئيسية
@@ -70,62 +35,65 @@
           </a>
         </li>
         <li>
-          <a class="item" href="./users.html">
+          <a class="item" href="./storge.html">
+            المخزن
+            <i class="fas fa-coins i-item"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./employ.html">
+            ادراة الموظفين
+            <i class="fa-solid fa-users-gear i-item"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./clients.html">
             العملاء
-            <i class="i-item fa-solid fa-users"></i>
+            <i class="fa-solid fa-users i-item"></i>
           </a>
         </li>
         <li>
-          <a class="item" href="./contracts.html">
-            العقود
-            <i class="i-item fa-solid fa-sheet-plastic"></i>
+          <a class="item" href="./import.html">
+            الوارد
+            <i class="fa-solid fa-box-open i-item"></i>
           </a>
         </li>
         <li>
-          <a class="item" href="">
-            الفواتير
-            <i class="i-item fa-solid fa-money-check-dollar"></i>
+          <a class="item" href="./reports.html">
+            التقارير
+            <i class="fa-solid fa-file i-item"></i>
           </a>
         </li>
         <li>
-          <div class="dropdown-hover item">
-            <div>
-              السندات
-              <i class="i-item fa-solid fa-bars-progress"></i>
-            </div>
-            <div class="arrow-icon">
-              <i class="fa-solid fa-angle-down"></i>
-            </div>
-            <ul class="listis-item" id="dropdown-lang">
-              <li class="item-drop">
-                <a href="#">
-                  <p class="text">سند صرف</p>
-                </a>
-              </li>
-              <li class="item-drop">
-                <a href="#">
-                  <p class="text">سند قبض</p>
-                </a>
-              </li>
-              <li class="item-drop">
-                <a href="#">
-                  <p class="text">تقارير السندات</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a class="item" href="./notice.html">
-            الأشعارات
-            <i class="i-item fa-solid fa-bell"></i>
-            <div class="badge-count">5</div>
+          <a class="item" href="./users.html">
+            النسخ الاحتياطي
+            <i class="fa-solid fa-paste i-item"></i>
           </a>
         </li>
       </ul>
+      <div class="dropdown-hover" data-show="dropdown-lang">
+        <div class="icon-drop">
+          <i class="fa-solid fa-user icon"></i>
+        </div>
+        <p class="text ">admin</p>
+        <div class="arrow-icon">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <ul class="listis-item" id="dropdown-lang">
+          <li class="item-drop">
+            <a href="./login.html">
+              <p class="text">تسجيل الخروج</p>
+            </a>
+          </li>
+          <li class="item-drop">
+            <a href="#">
+              <p class="text">اعدادات الحساب</p>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-  <!-- End Bottom Nav Bar -->
   <!-- Start Section -->
   <section class="loginPage py-5">
     <div class="container">
@@ -169,9 +137,11 @@
   <!-- Start Footer -->
   <div class="footer-bottom py-3">
     <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-between gap-3">
+      <div
+        class="d-flex flex-wrap align-items-center justify-content-between gap-3"
+      >
         <p>جميع الحقوق محفوظة © لـ 2022</p>
-        <!-- <img src="./img/footer/copy.png" alt="" /> -->
+        <p>جامعة غريان - كلية تقنية المعلومات</p>
       </div>
     </div>
   </div>
