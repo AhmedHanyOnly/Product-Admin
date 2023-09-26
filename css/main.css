@@ -45,7 +45,7 @@ button {
 
 .main-section {
   padding: 1.5rem 0;
-  min-height: calc(100vh - 41.88px - 54.5px - 69px);
+  min-height: calc(100vh - 45.5px - 69px);
 }
 
 .modal-header .modal-title {
@@ -69,11 +69,17 @@ button {
   border-radius: 8px;
 }
 
+@media print {
+  .not-print {
+    display: none;
+  }
+}
 .top-nav {
   background-color: #c29144;
   color: white;
   font-size: 13px;
   z-index: 1000;
+  padding: 10px 0;
 }
 .top-nav .container {
   display: flex;
@@ -157,6 +163,10 @@ button {
   border-bottom: 3px solid #c29144;
   background-color: white;
   z-index: 1000;
+}
+.bottom-nav .container {
+  display: flex;
+  justify-content: space-between;
 }
 .bottom-nav .container .tog-show {
   display: none;
@@ -616,13 +626,14 @@ button {
   font-size: 25px;
 }
 .boxes-info .box-info .text {
-  font-size: 18px;
+  font-size: 20px;
   color: #6b7280;
+  padding: 10px;
 }
 .boxes-info .box-info .bg-icon {
   position: absolute;
   right: 3%;
-  bottom: 0;
+  bottom: 10px;
   font-size: 60px;
 }
 .boxes-info.boxes-bg-color .box-info {

@@ -54,13 +54,13 @@
             </div>
           </li> -->
           <li>
-            <a class="item" href="./storge.html">
+            <a class="item" href="./users.html">
               المخزن
               <i class="fas fa-coins i-item"></i>
             </a>
           </li>
           <li>
-            <a class="item" href="./employ.html">
+            <a class="item" href="#">
               ادراة الموظفين
               <i class="fa-solid fa-users-gear i-item"></i>
             </a>
@@ -72,19 +72,19 @@
             </a>
           </li>
           <li>
-            <a class="item" href="./import.html">
+            <a class="item" href="">
               الوارد
               <i class="fa-solid fa-box-open i-item"></i>
             </a>
           </li>
           <li>
-            <a class="item" href="./reports.html">
+            <a class="item" href="">
               التقارير
               <i class="fa-solid fa-file i-item"></i>
             </a>
           </li>
           <li>
-            <a class="item" href="./users.html">
+            <a class="item" href="">
               النسخ الاحتياطي
               <i class="fa-solid fa-paste i-item"></i>
             </a>
@@ -122,48 +122,67 @@
     </nav>
     <!-- End Bottom Nav Bar -->
     <!-- Start Section -->
-    <section class="main-section home h-100vh">
+    <section class="main-section users">
       <div class="container">
-        <h4 class="main-heading">الرئيسية</h4>
-        <div class="row row-gap-24 mb-4 boxes-info">
-          <div class="col-sm-6 ">
-            <a href="./storge.html">
-              <div class="box-info blue">
-                <i class="fas fa-coins bg-icon"></i>
-                <!-- <div class="num">851.00</div> -->
-                <div class="text">المخزن </div>
+        <h4 class="main-heading">العملاء</h4>
+        <div class="d-flex align-items-center flex-wrap justify-content-end mb-2">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#modal-add" class="btn-main-sm">
+            أضف بضاعة
+            <i class="icon fa-solid fa-plus"></i>
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="modal-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">اضافة عميل </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row row-gap-24">
+                    <div class=" col-sm-12">
+                      <label class="small-label" for="">اسم الادارة </label>
+                      <input class="form-control" type="text" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-main-sm ">حفظ</button>
+                </div>
               </div>
-            </a>
+            </div>
           </div>
-          <div class="col-sm-6 ">
-            <a href="">
-              <div class="box-info green">
-                <i class="fa-solid fa-box-open bg-icon"></i>
-                <!-- <div class="num">0.00</div> -->
-                <div class="text">الوارد  </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-sm-6">
-            <a href="">
-              <div class="box-info pur">
-                <i class="fa-solid fa-paste bg-icon"></i>
-                <!-- <div class="num">851.00</div> -->
-                <div class="text">النسخ الاحتياطي</div>
-              </div>
-            </a>
-            
-          </div>
-          <div class="col-sm-6">
-            <a href="">
-              <div class="box-info red">
-                <i class="fa-solid fa-file bg-icon"></i>
-                <!-- <div class="num">0.00</div> -->
-                <div class="text">التقارير</div>
-              </div>
-            </a>
-            
-          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table main-table">
+            <thead>
+              <tr>
+                <th>رقم الادارة </th>
+                <th>اسم الادارة</th>
+                <th class="text-center">التحكم</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>اسم</td>
+                <td >
+                  <div class="d-flex flex-wrap align-items-center justify-content-center gap-1">
+                    <div class="btn btn-sm btn-warning">
+                      <i class="fa-solid fa-print"></i>
+                    </div>
+                    <div class="btn btn-sm btn-primary">
+                      <i class="fa-solid fa-pen-to-square"></i>
+                    </div>
+                    <div class="btn btn-sm btn-danger">
+                      <i class="fa-solid fa-trash-can"></i>
+                    </div>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </section>

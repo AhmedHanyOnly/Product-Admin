@@ -4,6 +4,7 @@
     color: white;
     font-size: 13px;
     z-index: 1000;
+    padding: 10px 0;
     .container{
         display: flex;
         align-items: center;
@@ -81,8 +82,10 @@
     border-bottom: 3px solid $main-color;
     background-color: white;
     z-index: 1000;
+
     .container {
-        
+      display: flex;
+      justify-content: space-between;
         .tog-show {
             display: none;
             cursor: pointer;
