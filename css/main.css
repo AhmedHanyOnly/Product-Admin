@@ -227,6 +227,7 @@ button {
 }
 
 .loginPage {
+  height: 100vh;
   width: 100%;
   min-height: calc(100vh - 155px - 463.38);
   display: flex;

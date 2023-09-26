@@ -1,5 +1,7 @@
 // Start Login And Reseat
 .loginPage {
+
+  height: 100vh;
   @include maxWidth(md) {
     .login_box {
       width: 100% !important;
@@ -81,6 +83,7 @@
     }
   }
 }
+
 // End Login And Reseat
 
 
