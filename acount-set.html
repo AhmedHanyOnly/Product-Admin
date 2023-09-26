@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- Normalize -->
+  <link rel="stylesheet" href="css/normalize.css" />
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css" />
+  <!-- Main Faile Css  -->
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <nav class="top-nav">
+    <div class="container">
+      <a href="#" class="tog-show" data-show=".top-nav .list-item"
+        ><i class="fa-solid fa-bars"></i
+      ></a>
+      <ul class="list-item ">
+        <li>
+          <a class="item" href="./index.html">
+            الرئيسية
+            <i class="i-item fa-solid fa-house"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./storge.html">
+            المخزن
+            <i class="fas fa-coins i-item"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./employ.html">
+            ادراة الموظفين
+            <i class="fa-solid fa-users-gear i-item"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./clients.html">
+            العملاء
+            <i class="fa-solid fa-users i-item"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./import.html">
+            الوارد
+            <i class="fa-solid fa-box-open i-item"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./reports.html">
+            التقارير
+            <i class="fa-solid fa-file i-item"></i>
+          </a>
+        </li>
+        <li>
+          <a class="item" href="./users.html">
+            النسخ الاحتياطي
+            <i class="fa-solid fa-paste i-item"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="dropdown-hover" data-show="dropdown-lang">
+        <div class="icon-drop">
+          <i class="fa-solid fa-user icon"></i>
+        </div>
+        <p class="text ">admin</p>
+        <div class="arrow-icon">
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+        <ul class="listis-item" id="dropdown-lang">
+          <li class="item-drop">
+            <a href="./login.html">
+              <p class="text">تسجيل الخروج</p>
+            </a>
+          </li>
+          <li class="item-drop">
+            <a href="#">
+              <p class="text">اعدادات الحساب</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Start Section -->
+  <section class="main-section py-5">
+    <div class="container">
+
+                <div class="card card-register h-100">
+                    <form action="" method="POST">
+
+                        <div class="card-body shadow">
+                            <div class="row gutters g-2">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                    <h6 class="mb-2 text-primary">اعدادات الحساب</h6>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label  class="mb-2 small-label">تغيير الاسم </label>
+                                        <input type="text"
+                                            class="form-control" >
+
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="eMail" class="mb-2 small-label" >تغيير البريد الاليكتروني </label>
+                                        <input type="email" name="email"
+                                            class="form-control" id="eMail">
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12">
+                                    <div class="form-group">
+                                        <label for="password" class="small-label mb-2">تغيير كلمة المرور</label>
+                                        <input type="password" name="password" class="form-control" id="password">
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="text-center">
+                                            <button type="submit" id="submit"
+                                                class="btn btn-sm btn-primary">حفظ</button>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            </div>
+                        </div>
+                    </form>
+        </div>
+    </div>
+</section>
+  <!-- End Section -->
+  <!-- Start Footer -->
+  <div class="footer-bottom py-3">
+    <div class="container">
+      <div
+        class="d-flex flex-wrap align-items-center justify-content-between gap-3"
+      >
+        <p>جميع الحقوق محفوظة © لـ 2022</p>
+        <p>جامعة غريان - كلية تقنية المعلومات</p>
+      </div>
+    </div>
+  </div>
+  <!-- ENd Footer -->
+  <!-- Js Files -->
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/all.min.js"></script>
+</body>
+
+</html>
