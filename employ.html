@@ -99,6 +99,35 @@
     <section class="main-section users">
       <div class="container">
         <h4 class="main-heading">ادارة الموظفين</h4>
+        <div class="d-flex align-items-center flex-wrap  justify-content-end mb-2">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#modal-add" class="btn-main-sm">
+            أضف ادارة
+            <i class="icon fa-solid fa-plus"></i>
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="modal-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">أضف بضاعة جديد </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="row row-gap-24">
+                    <div class=" col-sm-12">
+                      <label class="small-label" for="">اسم الادارة </label>
+                      <input class="form-control" type="text" placeholder="">
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn-main-sm ">حفظ</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <form class="bg-white p-3 rounded-2 shadow" >
           <div class="row row-gap-24">
             <div class="col-sm-6 col-md-4 ">
@@ -164,6 +193,9 @@
                     
                     
                     <div class="d-flex  align-items-center justify-content-center gap-1">
+                      <div class="btn btn-sm btn-success ">
+                        تحديث
+                      </div>
                       <div class="btn btn-sm btn-primary ">
                         تعديل
                       </div>
