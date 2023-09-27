@@ -98,92 +98,11 @@
     <!-- Start Section -->
     <section class="main-section users">
       <div class="container">
-        <h4 class="main-heading">ادارة الموظفين</h4>
-        <div
-          class="d-flex align-items-center flex-wrap justify-content-end mb-2"
-        >
-          <button
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#modal-add"
-            class="btn-main-sm"
-          >
-            أضف ادارة
-            <i class="icon fa-solid fa-plus"></i>
-          </button>
-        </div>
+        <h4 class="main-heading mt-5">ادارة المسؤولين</h4>
         <form class="bg-white p-3 rounded-2 shadow">
-          <div class="row row-gap-24">
-            <div class="col-sm-6 col-md-4">
-              <div class="form-check">
-                <label class="form-check-label" for="flexCheckDefault">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  إدارة المخزن
-                </label>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="form-check">
-                <label class="form-check-label" for="flexCheckDefault">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  إدارة الوارد
-                </label>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="form-check">
-                <label class="form-check-label" for="flexCheckDefault">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  تنزيل التقارير
-                </label>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="form-check">
-                <label class="form-check-label" for="flexCheckDefault">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  النسخ الاحتياطي
-                </label>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4">
-              <div class="form-check" dir="rtl">
-                <label class="form-check-label" for="flexCheckDefault">
-                  <input
-                    class="form-check-input"
-                    type="checkbox"
-                    value=""
-                    id="flexCheckDefault"
-                  />
-                  إدارة العملاء
-                </label>
-              </div>
-            </div>
-          </div>
           <div
-            class="d-flex align-items-center flex-wrap justify-content-between mb-2"
+            class="d-flex align-items-center flex-wrap justify-content-end mb-2"
           >
-            <h4 class="main-heading mt-5">ادارة المسؤولين</h4>
             <button
               type="button"
               data-bs-toggle="modal"
@@ -217,6 +136,13 @@
                       class="d-flex align-items-center justify-content-center gap-1"
                     >
                       <div
+                        class="btn btn-sm btn-success"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modal-permision"
+                      >
+                        الصلاحيات
+                      </div>
+                      <div
                         class="btn btn-sm btn-primary"
                         data-bs-toggle="modal"
                         data-bs-target="#modal-edit"
@@ -239,10 +165,10 @@
         </form>
       </div>
     </section>
-    <!-- Modal-add -->
+    <!-- Modal-permision -->
     <div
       class="modal fade"
-      id="modal-add"
+      id="modal-permision"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
       tabindex="-1"
@@ -252,7 +178,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">أضف بضاعة جديد</h5>
+            <h5 class="modal-title" id="staticBackdropLabel">الصلاحيات</h5>
             <button
               type="button"
               class="btn-close"
@@ -262,9 +188,70 @@
           </div>
           <div class="modal-body">
             <div class="row row-gap-24">
-              <div class="col-sm-12">
-                <label class="small-label" for="">اسم الادارة </label>
-                <input class="form-control" type="text" placeholder="" />
+              <div class="col-sm-6 col-md-4">
+                <div class="form-check">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    إدارة المخزن
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-check">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    إدارة الوارد
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-check">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    تنزيل التقارير
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-check">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    النسخ الاحتياطي
+                  </label>
+                </div>
+              </div>
+              <div class="col-sm-6 col-md-4">
+                <div class="form-check" dir="rtl">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckDefault"
+                    />
+                    إدارة العملاء
+                  </label>
+                </div>
               </div>
             </div>
           </div>
