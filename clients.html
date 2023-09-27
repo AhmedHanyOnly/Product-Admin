@@ -27,7 +27,7 @@
         <a href="#" class="tog-show" data-show=".top-nav .list-item"
           ><i class="fa-solid fa-bars"></i
         ></a>
-        <ul class="list-item ">
+        <ul class="list-item">
           <li>
             <a class="item" href="./index.html">
               الرئيسية
@@ -75,7 +75,7 @@
           <div class="icon-drop">
             <i class="fa-solid fa-user icon"></i>
           </div>
-          <p class="text ">admin</p>
+          <p class="text">admin</p>
           <div class="arrow-icon">
             <i class="fa-solid fa-angle-down"></i>
           </div>
@@ -99,46 +99,26 @@
     <section class="main-section users">
       <div class="container">
         <h4 class="main-heading">العملاء</h4>
-        <div class="d-flex align-items-center flex-wrap justify-content-end mb-2">
-          <button type="button" data-bs-toggle="modal" data-bs-target="#modal-add" class="btn-main-sm">
+        <div
+          class="d-flex align-items-center flex-wrap justify-content-end mb-2"
+        >
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-add"
+            class="btn-main-sm"
+          >
             أضف بضاعة
             <i class="icon fa-solid fa-plus"></i>
           </button>
-          <!-- Modal -->
-          <div class="modal fade" id="modal-add" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-            aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="staticBackdropLabel">اضافة عميل </h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="row row-gap-24">
-                    <div class=" col-sm-12 col-md-6">
-                      <label class="small-label" for="">اسم الادارة </label>
-                      <input class="form-control" type="text" placeholder="">
-                    </div>
-                    <div class=" col-sm-12 col-md-6">
-                      <label class="small-label" for="">رقم الادارة </label>
-                      <input class="form-control" type="text" placeholder="">
-                    </div>
-                  </div>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn-main-sm ">حفظ</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
         <div class="table-responsive">
           <table class="table main-table">
             <thead>
               <tr>
-                <th># </th>
+                <th>#</th>
                 <th>اسم الادارة</th>
-                <th>رقم الادارة </th>
+                <th>رقم الادارة</th>
                 <th class="text-center">التحكم</th>
               </tr>
             </thead>
@@ -147,15 +127,22 @@
                 <td>1</td>
                 <td>اسم</td>
                 <td>1</td>
-                <td >
-                  <div class="d-flex  align-items-center justify-content-center gap-1">
-                    <div class="btn btn-sm btn-success ">
-                      تحديث
-                    </div>
-                    <div class="btn btn-sm btn-primary ">
+                <td>
+                  <div
+                    class="d-flex align-items-center justify-content-center gap-1"
+                  >
+                    <div
+                      class="btn btn-sm btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-edit"
+                    >
                       تعديل
                     </div>
-                    <div class="btn btn-sm btn-danger">
+                    <div
+                      class="btn btn-sm btn-danger"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-delete"
+                    >
                       حذف
                     </div>
                   </div>
@@ -167,6 +154,138 @@
       </div>
     </section>
     <!-- End Section -->
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-add"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">اضافة عميل</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row row-gap-24">
+              <div class="col-sm-12 col-md-6">
+                <label class="small-label" for="">اسم الادارة </label>
+                <input class="form-control" type="text" placeholder="" />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label class="small-label" for="">رقم الادارة </label>
+                <input class="form-control" type="text" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              style="font-size: 12px"
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn-main-sm">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal-edit -->
+    <div
+      class="modal fade"
+      id="modal-edit"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">تعديل العميل</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row row-gap-24">
+              <div class="col-sm-12 col-md-6">
+                <label class="small-label" for="">اسم الادارة </label>
+                <input class="form-control" type="text" placeholder="" />
+              </div>
+              <div class="col-sm-12 col-md-6">
+                <label class="small-label" for="">رقم الادارة </label>
+                <input class="form-control" type="text" placeholder="" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              style="font-size: 12px"
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn-main-sm">حفظ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal-delete -->
+    <div
+      class="modal fade"
+      id="modal-delete"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">حذف البضاعة</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <h6 class="text-center">هل انت متأكد من اجراء عملية الحذف!</h6>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              style="font-size: 12px"
+              data-bs-dismiss="modal"
+            >
+              الغاء
+            </button>
+            <button type="button" class="btn-main-sm">نعم</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Start Footer -->
     <div class="footer-bottom py-3">
       <div class="container">
