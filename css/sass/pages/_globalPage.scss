@@ -48,9 +48,16 @@ button {
   background-color: $main-color;
   border-radius: 8px;
 }
+.text-print {
+  display: none;
+}
 @media print {
   .not-print {
     display: none;
+  }
+  .text-print {
+    display: block;
+    font-size: 10px;
   }
 }
 /* Tooltip container */
@@ -70,7 +77,7 @@ button {
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
- 
+
   /* Position the tooltip text - see examples below! */
   position: absolute;
   z-index: 1;

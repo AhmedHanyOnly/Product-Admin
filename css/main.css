@@ -69,9 +69,17 @@ button {
   border-radius: 8px;
 }
 
+.text-print {
+  display: none;
+}
+
 @media print {
   .not-print {
     display: none;
+  }
+  .text-print {
+    display: block;
+    font-size: 10px;
   }
 }
 /* Tooltip container */
